@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+    <h1 style="text-align:center">Word Cloud</h1>
+<div class="row">
+  <div class="column">
+    <img src="assets/img/pos.png" alt="Snow" width="500" height="500">
+    <h1 style="text-align:center">Positive Sentiments</h1>
+  </div>
+  <div class="column">
+    <img src="assets/img/neu.png" alt="Forest" width="500" height="500">
+    <h1 style="text-align:center">Neutral Sentiments</h1>
+  </div>
+  <div class="column">
+    <img src="assets/img/neg.png" alt="Mountains" width="500" height="500">
+    <h1 style="text-align:center">Negative Sentiments</h1>
+  </div>
+</div>
+
+</body>
+</html>

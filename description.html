@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Description</h1>
+  <p></p>
+  <p></p>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="assets/img/aim.png" width="200" height="200" style="width:100%">
+      <div class="container">
+        <h2>Aim</h2>
+        
+        <p>Our aim about his project is to classify the sentiment of companies based on verified user's tweets as well as articles published by reputable sources.</p>
+        <p>For example, a tweet would say Amazon is a buy, you must invest now and these libraries would classify it as negative , positive  or neutral sentiment.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="assets/img/ps.png" width="200" height="200" style="width:100%">
+      <div class="container">
+        <h2>Problem Statement</h2>
+        <p>Compute and display statistics.<br>
+          Visualize the data and its outcome by plotting graphs.<br>
+          Perform variable transformations and also describe correlations for the variables.
+          Build a model and predict results.
+          Perform visual analytics using any Tableau.Create a website to showcase the entire work done.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="assets/img/obj.png" width="200" height="200" style="width:100%">
+      <div class="container">
+        <h2>In detail get more info in Objective section.</h2>
+        <p>1.Cleaning of Tweets: Removing the stop words.<br>      
+          2.Categorizing the tweets into positive, negative, neutral.<br>          
+          3.Create a word cloud of the sentiments.<br>          
+          4.Classification and Modeling</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

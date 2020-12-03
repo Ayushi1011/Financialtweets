@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Dashboard</h1>
+  <p></p>
+  <p></p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="assets/img/dashboard.jpeg"  style="width:100%">
+      <div class="container">
+        <h2>Dashboard</h2>
+        <p>A dashboard is a type of graphical user interface which often provides 
+          at-a-glance views of key performance indicators (KPIs) 
+          relevant to a particular objective or business process. 
+          In other usage, "dashboard" is another name for "progress report" or "report" and considered a form of data visualization.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="assets/img/visu.jpeg" width="262.1" height="146.633">
+      <div class="container">
+        <h2>Data Visualization</h2>
+        <p>Presenting raw data through graphical representations to explore the data and uncover deep insights.
+          <br><h2>Benefits:</h2>Better analysis<br>Quick Action<br>Exploring business insights<br>Finding errors<br>Grasping the Latest Trends
+        <br><h2>Tool Used: Tableau</h2></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="assets/img/vi.jpeg" width="262.1" height="146.633">
+      <div class="container">
+        <h2>Visuals In Our Dashboard</h2>
+        
+        <p><b>BAR PLOT </b>Represents the category of data with rectangular bars with lengths and heights 
+         proportional to the values which they represent.<br><b>Plotted:</b>Verification of a company on basis of tweet counts.
+         <br><b>LINE CHART </b>Displays information as a series of data points called markers connected by straight line segments.
+         <br><b>Plotted:</b>Financial Tweet count on basis of company.<br>
+         <b>BUBBLE CHART </b>Displays three dimensions of data(a variation of the scatter plot, 
+         in which the data points are replaced with bubbles).<br><b>Plotted:</b>How much is the company liked or disliked by the customers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
